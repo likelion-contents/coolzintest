@@ -1,0 +1,65 @@
+<!-- 이 문서가 html 임을 써줌 -->
+<!DOCTYPE html>
+<!-- html 문서는 head와 body로 구성됨 -->
+<html>
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 브라우저 탭에 보이는 제목 -->
+    <title>나는 쿨찐일까? 쿨찐 테스트해보기</title>
+    <!-- css 스타일시트의 주소 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Body -->
+<body>
+    <!-- 페이지 전체를 감싸는 wrapper div -->
+    <div id="wrapper">
+        <!-- wrapper 안에 header/section/footer 구조 -->
+        <!-- header는 주로 로고와 상단메뉴, 제목들을 포함 -->
+        <!-- section는 주로 페이지의 핵심 내용 포함 -->
+        <!-- footer는 주로 페이지의 하단 메뉴, Copyright, Contact 정보들을 포함 -->
+        <header class="intro">
+            <!-- 각 구역도 다시 header/section/footer로 구성할 수 있음 -->
+            <header>
+                <!-- h1/h2/h3는 주로 제목을 강조할때 쓰는 태그 -->
+                <h2>쿨찐 테스트</h2>
+            </header>
+            <section>
+                <!-- p 태그는 문단을 표시할 때 주로 쓰므로 자동으로 줄을 바꿈 -->
+                <p>자신은 절대 아니라고</p>
+                <p>생각하는 쿨찐들!!</p>
+                <p>내가 설마 쿨찐은 아니겠지?</p>
+            </section>
+            <footer>
+                <!-- a 태그는 하이퍼링크를 걸어주는 태그 -->
+                <a href="test.html" class="button-label"><h3>시작하기</h3></a>
+            </footer>
+        </header>
+        <!-- 첫 페이지에는 section에 넣을게 없음 -->
+        <!-- header/section/footer를 반드시 포함할 필요는 없음 -->
+        <footer class="bottom">
+            <!-- 카카오 애드핏 광고 -->
+            <ins class="kakao_ad_area" style="display:none;" 
+            data-ad-unit    = "DAN-eqegmsEzMOQZfd2n"
+            data-ad-width   = "320" 
+            data-ad-height  = "50"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+            <!-- div는 페이지의 영역을 설정할 때 사용하는 태그 -->
+            <div>친구들도 테스트시키기</div>
+            <!-- addthis를 이용해서 공유하기 기능 추가 -->
+            <div class="addthis_inline_share_toolbox"></div>
+            <!-- copyright 넣기 -->
+            <div class="copyright">
+                <a href="https://classlion.net/">LIKELION</a>과 학생들이 함께 만들었어요.
+            </div>
+        </footer>
+    </div>
+    <!-- addthis를 위한 javascript 파일 링크 -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ee73a6845cb0f2"></script>
+</body>
+
+</html>

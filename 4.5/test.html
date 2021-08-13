@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>나는 쿨찐일까? 쿨찐 테스트해보기</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 상단 제목의 높이 낮게 하기 위해 small 클래스를 추가 -->
+            <header class="intro small">
+                <header>
+                    <!-- 첫 페이지로 돌아갈 수 있는 하이퍼링크 추가 -->
+                    <h2><a href="index.html">쿨찐 테스트</a></h2>
+                </header>
+            </header>
+            <!-- section에 질문들을 추가 -->
+            <section id="contents">
+                <!-- section 안에 여러 개의 내용들이 들어갈때는 article로 구분 -->
+                <article>
+                    <div>
+                        <!-- b 태그는 글씨를 진하게 함 -->
+                        <h2><b>오바 좀 하지마</b></h2>
+                        <p>솔직히 별 것도 아닌 일에 과몰입하는 진지충들이 너무 많다.</p>
+                    </div>
+                    <!-- 이런건 에쁜 radio button을 가져다쓰자! -->
+                    <!-- https://codepen.io/ohchul/pen/LYyWjRz -->
+                    <div>
+                        <!-- radio button은 같은 name끼리 묶임 -->
+                        <!-- input 부분은 hidden으로 가리고, 실제로는 label 부분을 꾸며서 버튼 모양을 만듬 -->
+                        <!-- label의 for의 값이 input의 id와 같아야 함 -->
+                        <input class="hidden radio-label yes-button" id="q1-yes-button" type="radio" name="q1"/>
+                        <label class="button-label" for="q1-yes-button">
+                            <h3>Yes</h3>
+                        </label>
+                        <input class="hidden radio-label no-button" id="q1-no-button" type="radio" name="q1"/>
+                        <label class="button-label" for="q1-no-button">
+                            <h3>No</h3> 
+                        </label>
+                        <input class="hidden radio-label maybe-button" id="q1-maybe-button" type="radio" name="q1"/>
+                        <label class="button-label" for="q1-maybe-button">
+                            <h3>Maybe</h3>
+                        </label>
+                    </div>
+                </article>
+                <!-- 위 article을 복사해서 문제를 추가해보자 -->
+                <article>
+                    <div>
+                        <h2><b>뒷담화 노노</b></h2>
+                        <p>뒤에서 딴소리 하느니, 표현이 다소 직설적이더라도 솔작하게 앞에서 말하는게 상대방을 위해서도 좋다고 생각한다.</p>
+                    </div>
+                    <!-- 한 radio button 그룹의 name은 유일해야하므로 q2로 바꿔줘야 함 -->
+                    <div>
+                        <input class="hidden radio-label yes-button" id="q2-yes-button" type="radio" name="q2"/>
+                        <label class="button-label" for="q2-yes-button">
+                            <h3>Yes</h3>
+                        </label>
+                        <input class="hidden radio-label no-button" id="q2-no-button" type="radio" name="q2"/>
+                        <label class="button-label" for="q2-no-button">
+                            <h3>No</h3> 
+                        </label>
+                        <input class="hidden radio-label maybe-button" id="q2-maybe-button" type="radio" name="q2"/>
+                        <label class="button-label" for="q2-maybe-button">
+                            <h3>Maybe</h3>
+                        </label>
+                    </div>
+                </article>
+                <!-- 이렇게 3개를 더 추가해줌 -->
+                <article>
+                    <div>
+                        <h2><b>1절만 하자</b></h2>
+                        <p>솔직히 노잼인데 1절 2절 3절을 넘어 뇌절까지 하는건 들어주기가 힘들다.</p>
+                    </div>
+                    <div>
+                        <input class="hidden radio-label yes-button" id="q3-yes-button" type="radio" name="q3"/>
+                        <label class="button-label" for="q3-yes-button">
+                            <h3>Yes</h3>
+                        </label>
+                        <input class="hidden radio-label no-button" id="q3-no-button" type="radio" name="q3"/>
+                        <label class="button-label" for="q3-no-button">
+                            <h3>No</h3> 
+                        </label>
+                        <input class="hidden radio-label maybe-button" id="q3-maybe-button" type="radio" name="q3"/>
+                        <label class="button-label" for="q3-maybe-button">
+                            <h3>Maybe</h3>
+                        </label>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h2><b>머리는 좋아</b></h2>
+                        <p>솔직히 내가 머리는 좋은데 공부하기는 싫다. 성적보다 중요한건 세상에 얼마든지 많기 때문이다.</p>
+                    </div>
+                    <div>
+                        <input class="hidden radio-label yes-button" id="q4-yes-button" type="radio" name="q4"/>
+                        <label class="button-label" for="q4-yes-button">
+                            <h3>Yes</h3>
+                        </label>
+                        <input class="hidden radio-label no-button" id="q4-no-button" type="radio" name="q4"/>
+                        <label class="button-label" for="q4-no-button">
+                            <h3>No</h3> 
+                        </label>
+                        <input class="hidden radio-label maybe-button" id="q4-maybe-button" type="radio" name="q4"/>
+                        <label class="button-label" for="q4-maybe-button">
+                            <h3>Maybe</h3>
+                        </label>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h2><b>아싸이고 싶어</b></h2>
+                        <p>인싸는 화려해보이지만 피곤한 일이 더 많다. 나는 솔직히 아싸가 더 편하고 좋다.</p>
+                    </div>
+                    <div>
+                        <input class="hidden radio-label yes-button" id="q5-yes-button" type="radio" name="q5"/>
+                        <label class="button-label" for="q5-yes-button">
+                            <h3>Yes</h3>
+                        </label>
+                        <input class="hidden radio-label no-button" id="q5-no-button" type="radio" name="q5"/>
+                        <label class="button-label" for="q5-no-button">
+                            <h3>No</h3> 
+                        </label>
+                        <input class="hidden radio-label maybe-button" id="q5-maybe-button" type="radio" name="q5"/>
+                        <label class="button-label" for="q5-maybe-button">
+                            <h3>Maybe</h3>
+                        </label>
+                    </div>
+                </article>
+            </section>
+            <!-- 결과를 보는 페이지로 갈 수 있는 버튼을 만들자 -->
+            <footer class="bottom">
+                <!-- 카카오 애드핏 광고 -->
+            <ins class="kakao_ad_area" style="display:none;" 
+            data-ad-unit    = "DAN-eqegmsEzMOQZfd2n"
+            data-ad-width   = "320" 
+            data-ad-height  = "50"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+                <!-- 이 하이퍼링크를 클릭했을 때 javascript 함수를 호출하기 -->
+                <a onclick="result();" class="button-label blue"><h3>결과보기</h3></a>
+            </footer>
+        </div>
+    </body>
+
+    <!-- javascript는 script 태그로 감싸준다 -->
+    <script>
+        function result() {
+            // yes의 갯수를 세기위한 변수를 하나 선언함
+            var yes_counter = 0; 
+            // 페이지에서 radio-label과 yes-button 클래스를 동시에 가진 콤포넌트들을 다 참아서 elements에 저장
+            var elements = document.getElementsByClassName('radio-label yes-button');
+            // 이 elements들을 하나씩 확인하기
+            for (var i=0; i<elements.length; i++) {
+                // i번째 element가 check 되어 있는지 확인하기
+                if (elements[i].checked) {
+                    // yes_counter를 1 증가
+                    yes_counter++;
+                }
+            }
+            // Maybe 고른 유저도 사실은 yes 다. 같이 count 하자.
+            elements = document.getElementsByClassName('radio-label maybe-button');
+            for (var i=0; i<elements.length; i++) {
+                if (elements[i].checked) {
+                    yes_counter++;
+                }
+            }
+            // 대답안한 문항이 있는지 확인하기
+            // no라고 대답한 갯수까지 합쳐서 5이면 모든 질문에 대답했다는 의미
+            var no_counter = 0;
+            elements = document.getElementsByClassName('radio-label no-button');
+            for (var i=0; i<elements.length; i++) {
+                if (elements[i].checked) {
+                    no_counter++;
+                }
+            }
+            // 두 카운터를 더했을때 5가 아니면 창을 띄워서 알려주고, 페이지 이동을 중지함
+            if (yes_counter + no_counter != 5) {
+                alert("선택안한 문제가 있습니다. 모든 문제에 답해주세요.");
+                return;
+            }
+
+            // Counter에 따라 다른 결과 페이지로 이동하기
+            if (yes_counter == 5)
+                location.href="result_5.html";
+            else if (yes_counter == 4)
+                location.href="result_4.html";
+            else if (yes_counter >= 2)
+                location.href="result_3.html";
+            else if (yes_counter == 1)
+                location.href="result_2.html";
+            else
+                location.href="result_1.html";
+        }
+    </script>
+</html>
